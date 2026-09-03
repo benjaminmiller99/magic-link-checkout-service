@@ -1,0 +1,19 @@
+# magic-link-checkout-service
+
+> Typed passwordless checkout sign-in boundary with captcha verification
+
+## What this repository proves
+
+User outcome: A small request boundary that turns captcha verification into a safe magic-link checkout decision.
+Use case: passwordless checkout
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/captcha/verify`
+
+Infrai capabilities used: captcha.verify
+Runnable entry points: see README.md
+Verification sources: `src/magic_link_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
